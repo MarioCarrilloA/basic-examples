@@ -37,3 +37,13 @@ echo "This mesage is output throw stderr" >&2
 echo "The output to stdout.txt and error to stderr.txt"
 ls -l superman *.sh  > stdout.txt 2> stderr.txt
 
+# Do not erase the content
+echo "This is the first line"   > myoutput.txt
+echo "This is the second line" >> myoutput.txt
+echo "This is the third line"  >> myoutput.txt
+
+# Erase the content
+echo "This is the first line"  > myoutput2.txt
+echo "This is the first line again"  > myoutput2.txt
+echo "This is the first line again again"  > myoutput2.txt
+
