@@ -88,4 +88,12 @@ then
 	echo "Execution permission"
 fi
 
+# In order to use logical and relational
+# operators (AND, OR, EQUAL) you must use double
+# square brackets.
+if [[ -r "$LFILE" && -w "$LFILE" ]];
+then
+	echo "$LFILE can be edited"
+fi
+
 exit 0
