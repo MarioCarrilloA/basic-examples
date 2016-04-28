@@ -1,9 +1,9 @@
 #!/bin/bash
 
-#When the symbol($) is next to a number is
-#the syntax for receiving an argument,
-#the number indicate the number of arguments
-#expected and the order, example $1 $2 $3 etc.
+# When the symbol($) is next to a number is
+# the syntax for receiving an argument,
+# the number indicate the number of arguments
+# expected and the order, example $1 $2 $3 etc.
 NAME=$1
 SUMMARY="Basic bash examples."
 CONF_DIR="/etc"
