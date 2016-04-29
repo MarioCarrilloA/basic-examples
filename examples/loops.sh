@@ -30,7 +30,7 @@ echo "Environments"
 echo "============"
 for ienvt in ${!ENVS[*]}
 do
-    printf "%d %s\n" $ienvt ${ENVS[$envs]}
+    printf "%d %s\n" $ienvt ${ENVS[$ienvt]}
 done
 
 # In both cases the date in each position
