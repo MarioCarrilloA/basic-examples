@@ -23,7 +23,7 @@ fi
 # the numbers are equal.
 if [ "$N1" -eq "$N2" ];
 then
-	echo "$NUM and NUM2 are equal"
+	echo "$N1 and $N2 are equal"
 fi
 
 # [-ne] operator will return true if
