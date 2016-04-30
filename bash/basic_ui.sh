@@ -13,7 +13,7 @@ dialog  --title "Data Registration" \
 		--inputbox "Email:" 8 40 \
 		--inputbox "profile:" 8 40 \
 		--radiolist "Select Course:" 10 40 4 \
-        	1 Linux on \
+			1 Linux on \
 			2 Iot off \
 			3 other off 2>"$INFO"
 
