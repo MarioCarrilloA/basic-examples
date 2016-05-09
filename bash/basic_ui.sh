@@ -20,3 +20,5 @@ dialog  --title "Data Registration" \
 info=$(cat "$INFO")
 echo "$INFO"
 dialog --title "Personal information" --msgbox "$info" 10 25 ;
+
+exit 0

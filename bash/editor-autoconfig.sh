@@ -8,5 +8,4 @@ echo
 echo "What is the meaning from the second and third line of:"
 head -n 3 $0
 
-
-
+exit 0

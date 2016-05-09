@@ -40,3 +40,5 @@ function check_system_info()
 TIME=$(check_time)
 echo "User: $NAME check system at: $TIME"
 check_system_info "$(uname -r)"
+
+exit 0

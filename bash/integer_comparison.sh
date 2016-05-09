@@ -92,3 +92,5 @@ if (("$N1" >= "$N2"));
 then
 	echo "$N1 is greater or equal than $N2"
 fi
+
+exit 0

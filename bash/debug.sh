@@ -15,3 +15,4 @@ MYVAR=$(cat /etc/passwd | grep root | cut -c 1-4 | grep root)
 
 echo $MYVAR
 
+exit 0

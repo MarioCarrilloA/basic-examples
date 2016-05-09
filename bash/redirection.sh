@@ -49,3 +49,5 @@ echo "This is the first line again again"  > myoutput2.txt
 
 # Redirect errors to /dev/null
 ls superman 2> /dev/null
+
+exit 0

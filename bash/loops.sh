@@ -49,3 +49,5 @@ do
 	printf "%s\n" ${TOOLS[$TOOL]}
 	TOOL=$((TOOL+1))
 done
+
+exit 0
