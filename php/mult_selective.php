@@ -2,12 +2,16 @@
 
 <?php
 
-	$opts = getopt("hs:");
+	$opts = getopt("ha::n:");
 
 	foreach (array_keys($opts) as $opt)
 		switch ($opt) {
-			case 's':
-				echo "Case s";
+			case 'a':
+				echo "Optional value: ".$opts['a']."\n";
+				break;
+
+			case 'n':
+				echo "Name: ".$opts['n']."\n";
 				break;
 
 			case 'h':
