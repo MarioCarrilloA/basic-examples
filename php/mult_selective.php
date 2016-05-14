@@ -2,20 +2,22 @@
 
 <?php
 
-	$opt = 2;
+	$opts = getopt("hs:");
 
-	switch ($opt) {
-    	case 0:
-        	echo "case 0\n";
-			break;
-		case 1:
-			echo "case 1\n";
-			break;
-		case 2:
-			echo "case 2\n";
-			break;
-		default:
-			echo "Invalid\n";
-			break;
-	}
+	foreach (array_keys($opts) as $opt)
+		switch ($opt) {
+			case 's':
+				echo "Case s";
+				break;
+
+			case 'h':
+				echo "This is an example\n";
+				echo "about getting arguments in php\n";
+				break;
+
+			default:
+				echo "Invalid\n";
+				exit(1);
+				break;
+		}
 ?>
