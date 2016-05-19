@@ -7,10 +7,10 @@
 	echo "<h1>Students</h1>";
 
 
-	$host  = "";
-	$user  = "";
-	$pass  = "";
-	$dbase = "";
+	$host  = "Hostname or IP address";
+	$user  = "User name";
+	$pass  = "Password";
+	$dbase = "Data base name";
 	$query = "";
 
 	$connection = mysql_connect($host,$user,$pass);
