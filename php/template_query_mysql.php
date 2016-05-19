@@ -1,5 +1,4 @@
 <?php
-
 	echo "<html>";
 	echo "<head>";
 	echo "<title>Example LAMP</title>";
@@ -7,34 +6,25 @@
 	echo "<body>";
 	echo "<h1>Students</h1>";
 
-	//Information necessary for DB connection
-	$host  = "Hostname or IP address";
-	$user  = "User name";
-	$pass  = "Password";
-	$dbase = "Data base name";
+
+	$host  = "";
+	$user  = "";
+	$pass  = "";
+	$dbase = "";
 	$query = "";
 
-	$connection = new mysqli($host,$user,$pass,$dbase);
+	$connection = mysql_connect($host,$user,$pass);
+	mysql_select_db($dbase,$connection);
+	$result = mysql_query($query,$connection);
 
-	if ($stmt = $connection->prepare($query)) {
-		$stmt->execute();
-
-		/*bind_resiult funcion binds columns in the result set
-		to variables. example:
-		bind_result($id, $name, $tel, $addres)*/
-		$stmt->bind_result();
-
-		echo "<table border=1>";
-		while ($stmt->fetch()) {
-			echo "<tr>";
-			echo "<td>".$name."</td>";
-			echo "</tr>";
-		}
-
-		$stmt->close();
+	echo "<table border=1>";
+	while ($reg = mysql_fetch_row($result)){
+		echo "<tr>";
+		foreach ($reg as $field)
+			echo "<td>".$field."</td>";
+		echo "</tr>";
 	}
-
-	$connection->close();
+	mysql_close($connectin);
 	echo "</table>";
 	echo "</body>";
 	echo "</html>";
