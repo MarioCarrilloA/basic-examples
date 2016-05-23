@@ -1,2 +1,2 @@
-mytest: calc.h calc.c main.c
-	gcc -o mytest calc.c main.c -I.
+mytest: src/calc.h src/calc.c src/main.c
+	gcc -o mytest src/calc.c src/main.c -I./src
