@@ -15,13 +15,13 @@ showvars:
 	@echo "filter function: $(F_FILTR)"
 	@echo "lastword function: $(F_LWORD)"
 
-ifeq (destdir,destdir)
+ifeq ($(F_FINDS),main.c)
 	@echo "Equal strings"
 else
 	@echo "Different strings"
 endif
 
-ifneq (destdir,destdir)
+ifneq ($(F_FINDS),main.c)
 	@echo "Different strings"
 else
 	@echo "Equal strings"
