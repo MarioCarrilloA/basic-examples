@@ -6,6 +6,8 @@ F_FINDS := $(findstring main.c,$(F_WCARD))
 F_FILTR := $(filter-out src/main.c,$(F_WCARD))
 F_LWORD := $(lastword $(F_WCARD))
 
+include ./aux.mk
+
 showvars:
 	@echo "wildcard function: $(F_WCARD)"
 	@echo "subst function: $(F_SUBST)"
