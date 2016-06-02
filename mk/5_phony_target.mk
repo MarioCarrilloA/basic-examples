@@ -1,5 +1,5 @@
-CC=gcc
-CFLAGS=-I./src
+CC ?= gcc
+CFLAGS ?= -I./src
 DEPS = ./src/calc.h
 OBJ = calc.o main.o 
 
