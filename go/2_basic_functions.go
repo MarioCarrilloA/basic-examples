@@ -6,7 +6,9 @@ func addition(a int, b int) int {
 	return a + b
 }
 
-func subtraction(a int, b int) int {
+/* if the arguments are the same type
+* it could be specified just once. */
+func subtraction(a, b int) int {
 	return a - b
 }
 
