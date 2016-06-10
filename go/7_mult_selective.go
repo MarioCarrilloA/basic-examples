@@ -19,8 +19,32 @@ func os_selection(opt int) int {
 	return 0
 }
 
+func kernel_version(version float32) bool {
+	var accepted_version bool
+	switch {
+		case version < 2.6:
+			fmt.Println("Obsolete version")
+			accepted_version = false
+		case version == 4.4:
+			fmt.Println("Long term support version")
+			accepted_version = true
+		case version > 4.6:
+			fmt.Println("Recent version")
+			accepted_version = true
+		default:
+			fmt.Println("error")
+			accepted_version = false
+	}
+
+	return accepted_version
+}
+
 func main() {
 	fmt.Println("Multiple selective")
 	os_selection(2)
-	os_selection(-1)
+	if kernel_version(4.4) {
+		fmt.Println("Valid kernel version")
+	}else{
+		fmt.Println("Invalid kernel version")
+	}
 }
