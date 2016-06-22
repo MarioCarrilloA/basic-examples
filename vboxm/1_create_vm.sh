@@ -4,12 +4,15 @@ source info.sh
 
 # Create a Virtual Machine, it is a file
 # with VM settings in $HOME/VirtualBox VMs
-VBoxManage createvm --name "$VM_NAME"
+VBoxManage createvm \
+		--name "$VM_NAME"
 
 
 # Create a hard disk for VM. This virtual disk
 # will be created in the current path.
-VBoxManage createhd --filename "$HOME/$VBOX_DIR/$VM_NAME/$VHD_NAME" --size "$VHD_SIZE"
+VBoxManage createhd \
+		--filename "$HOME/$VBOX_DIR/$VM_NAME/$VHD_NAME" \
+		--size "$VHD_SIZE"
 
 
 # Register a virtual machine
