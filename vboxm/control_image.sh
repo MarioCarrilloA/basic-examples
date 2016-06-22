@@ -1,16 +1,57 @@
 #!/bin/bash
 
 source info.sh
+sname=${0##*/}
 
-ISO_IMAGE=$1
+function usage()
+{
+cat<<EOF
 
-if [ -z "$ISO_IMAGE" ];then
-	echo "iso image no found"
-fi
+Usage: $sname [options]
 
-VBoxManage storageattach "$VM_NAME" \
+Options:
+
+ -d			:Attach a virtual disk
+ -i			:Attach an ISO image
+ -h			:Show help
+
+EOF
+}
+
+function attach_disk()
+{
+	disk_path=$1
+	VBoxManage storageattach "$VM_NAME" \
+				--storagectl "SATA Controller" \
+				--port 0 \
+				--device 0 \
+				--type hdd \
+				--medium "$disk_path"
+}
+
+function attach_iso()
+{
+	iso_image=$1
+	VBoxManage storageattach "$VM_NAME" \
 			--storagectl "IDE Controller" \
 			--port 1 \
 			--device 0 \
 			--type dvddrive \
-			--medium "$ISO_IMAGE"
+			--medium "$iso_image"
+}
+
+while (( $# ))
+do
+	case $1 in
+		-d )
+			attach_disk $2
+		;;
+		-i )
+			attach_iso $2
+		;;
+		-h )
+			usage
+		;;
+	esac
+	shift
+done
