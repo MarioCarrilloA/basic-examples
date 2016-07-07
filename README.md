@@ -1,7 +1,14 @@
 # basic-examples
 
-This project contains some simple examples about bash scripting in
-order to get started to develop basic scripts.
+This project contains some simple examples about different languages and tools such as:
+- bash
+- go
+- php
+- Makefiles
+- VBoxManage
+
+These small collection is very basic and the objetuve is to get started to develop
+basic scripts and programs.
 
 ## Links
 
