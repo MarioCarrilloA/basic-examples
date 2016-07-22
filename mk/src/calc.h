@@ -1,9 +1,21 @@
-#ifndef calc_h__
-#define calc_h__
+#ifndef __CALC_H__
+#define __CALC_H__
 
-extern int addition(int, int);
-extern int subtraction(int, int);
-extern int division(int, int);
-extern int multiplication(int, int);
+#include <stdio.h>
 
-#endif  // calc_h__
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+int addition(int, int);
+
+int subtraction(int, int);
+
+int division(int, int);
+
+int multiplication(int, int);
+
+#ifdef __cplusplus
+}
+#endif
+#endif  // __CALC_H__
