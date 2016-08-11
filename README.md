@@ -7,7 +7,7 @@ This project contains some simple examples about different languages and tools s
 - Makefiles
 - VBoxManage
 
-These small collection is very basic and the objetuve is to get started to develop
+These small collection is very basic and the objetive is to get started to develop
 basic scripts and programs.
 
 ## Links
