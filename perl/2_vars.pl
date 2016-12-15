@@ -43,3 +43,16 @@ print "$names[1]: $scores[1]\n";
 print "$names[2]: $scores[2]\n";
 print "Total students: ", scalar @names,"\n";
 print "The students are: @names\n";
+
+# Hashes
+#
+# Basically a hash is group of
+# key/value, they start with "%"
+
+%group = ('Bob', 80, 'Sara', 95, 'John', 74);
+
+print "\$group{'Bob'}:  $group{'Bob'}\n";
+print "\$group{'Sara'}: $group{'Sara'}\n";
+print "\$group{'John'}: $group{'John'}\n";
+
+
