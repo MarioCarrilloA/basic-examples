@@ -5,11 +5,11 @@
 set -x
 set -e
 
-ls /home
+ls "/home"
 
 echo "What is the meaning of -x and -e"
 
-ls /etc | grep shadow
+ls "/etc" | grep shadow
 
 MYVAR=$(cat /etc/passwd | grep root | cut -c 1-4 | grep root)
 
