@@ -20,14 +20,13 @@ function modify_result()
 	# in execution time.
 	read anw
 
-	if [ $anw -eq 1 ];
-	then
+	if [ $anw -eq 1 ];then
 		echo "3.1415 "
-	elif [ $anw -eq 2 ];
-	then
+
+	elif [ $anw -eq 2 ];then
 		echo "2.718"
-	elif [ $anw -eq 3 ];
-	then
+
+	elif [ $anw -eq 3 ];then
 		echo "0.577215"
 	else
 		exit 0
