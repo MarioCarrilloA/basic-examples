@@ -33,38 +33,55 @@ function modify_result()
 	fi
 }
 
+function help()
+{
+usage=$(cat << EOF
+Usage: $0 [-h] [--help] [-v] [--version]
+   Description:
+         This script is a basic calculator
+   Options:
+          -h,   Help page
+          -a,   Addition <n1> <n2>
+          -s,   Subtraction <n1> <n2>
+          -m,   Multiplication <n1> <n2>
+          -d,   Division <n1> <n2>
+          -c,   Show constants
+EOF
+)
+	echo "$usage"
+}
 
-while (( $# ))
-do
+function main()
+{
+	while (( $# ));do
 	case $1 in
-		-h )
-			echo "-a, addition <n1> <n2>"
-			echo "-s, subtraction <n1> <n2>"
-			echo "-m, multiplication <n1> <n2>"
-			echo "-d, division <n1> <n2>"
-			echo "-c, Show constants"
-		;;
-		-a )
-			res=$((NUM1+NUM2))
-			echo "$res"
-			;;
-		-s )
-			res=$((NUM1-NUM2))
-			echo "$res"
-			;;
-		-m )
-			res=$((NUM1*NUM2))
-			echo "$res"
-			;;
-		-d )
-			res=$((NUM1/NUM2))
-			echo "$res"
-			;;
-		-c )
-			modify_result
-			;;
+	-h )
+	    help
+	;;
+	-a )
+	    res=$((NUM1+NUM2))
+	    echo "$res"
+	;;
+	-s )
+	    res=$((NUM1-NUM2))
+	    echo "$res"
+	;;
+	-m )
+	    res=$((NUM1*NUM2))
+	    echo "$res"
+	;;
+	-d )
+	    res=$((NUM1/NUM2))
+	    echo "$res"
+	;;
+	-c )
+	    modify_result
+	;;
 	esac
 	shift
 done
 
 exit 0
+}
+
+main "$@"
