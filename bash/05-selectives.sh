@@ -3,12 +3,10 @@
 NUM1=$2
 NUM2=$3
 
-# *** MULTIPLE SELECTIVE ***
+# *** Multiple selective ***
 
-# For multiple selection could be use
-# conditional sentences (if, elif and else)
-# or it could be using cases.
-
+# For multiple selection could be use conditional sentences
+# (if, elif and else) or it could be using cases.
 function modify_result()
 {
 	echo "Options:"
@@ -16,17 +14,16 @@ function modify_result()
 	echo "2. e"
 	echo "3. Euler constant, gamma"
 
-	# In bash is possible to ask for data
-	# in execution time.
+	# In bash is possible to ask for data in execution time.
 	read anw
 
-	if [ $anw -eq 1 ];then
+	if [ $anw -eq 1 ]; then
 		echo "3.1415 "
 
-	elif [ $anw -eq 2 ];then
+	elif [ $anw -eq 2 ]; then
 		echo "2.718"
 
-	elif [ $anw -eq 3 ];then
+	elif [ $anw -eq 3 ]; then
 		echo "0.577215"
 	else
 		exit 0
@@ -35,6 +32,7 @@ function modify_result()
 
 function help()
 {
+
 usage=$(cat << EOF
 Usage: $0 [-h] [--help] [-v] [--version]
    Description:
