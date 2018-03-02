@@ -1,4 +1,11 @@
-# Single and Double square brackets in Bash
+# Basic examples - Bash
+
+Bash adopts a serie of features from other shells, this fact and other
+optimizations/improvements makes bash as a current tool. This section
+includes a set of basic bash examples. This scripts just can a basic
+overview of the interpreter and some developing notes/advices.
+
+## Single and Double square brackets in Bash
 
 There are several differences [<a href="#1">1</a>]. In my opinion, a few of
 the most important are:
@@ -69,7 +76,7 @@ Redirection operator.
 
 Source: http://mywiki.wooledge.org/BashGuide/CommandsAndArguments
 
-# References
+## References
 
 <a name="1">1</a>. http://serverfault.com/questions/52034/what-is-the-difference-between-double-and-single-square-brackets-in-bash
 
