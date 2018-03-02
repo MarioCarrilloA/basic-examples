@@ -1,14 +1,17 @@
 # basic-examples
 
-This project contains some simple examples about different languages and tools such as:
+This project contains some simple examples about different languages and tools
+such as:
+
 - bash
 - go
 - php
+- python3
 - Makefiles
 - VBoxManage
 
-These small collection is very basic and the objetive is to get started to develop
-basic scripts and programs.
+These small collection is very basic and the objetive is to get started to
+develop basic scripts and programs.
 
 ## Links
 
