@@ -42,3 +42,10 @@ print(len("example"))
 # objects can have "methods".
 l.append("four")
 print(l)
+
+# Python provides a serie of logical operators.
+l2 = ["one", "two", "three", "four"]
+# The operator "is" returns "true" if both objects make reference to
+# the same.
+print(l is l2)
+print(l == l2)
