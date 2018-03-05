@@ -8,7 +8,6 @@ such as:
 - php
 - python3
 - Makefiles
-- VBoxManage
 
 These small collection is very basic and the objetive is to get started to
 develop basic scripts and programs.
