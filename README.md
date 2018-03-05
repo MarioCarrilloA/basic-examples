@@ -9,8 +9,8 @@ such as:
 - python3
 - Makefiles
 
-These small collection is very basic and the objetive is to get started to
-develop basic scripts and programs.
+This small collection is very basic and the objetive is to give an overview
+about the tool or language using basic scripts and programs as examples.
 
 ## Links
 
