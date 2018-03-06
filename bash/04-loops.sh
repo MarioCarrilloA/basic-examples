@@ -10,10 +10,10 @@ TOOL=0
 
 # *** LOOPS-ARRAYS ***
 #
-# The arrays can be iterated using a loop in order to list its content.
-# The braces allow to o avoid conflicts with  pathname expansion, furthermore
-# it allows to do operations in order to get multiple information from array.
-
+# The arrays can be iterated using a loop in order to list their content.
+# The braces allow to avoid conflicts with the pathname expansion. Furthermore
+# it allows to do operations in order to get multiple information from
+# the array.
 
 # In both cases the arrays can be iterated without using a index var.
 echo "Architectures"

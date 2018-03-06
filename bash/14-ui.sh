@@ -6,8 +6,14 @@
 # called dialog uses ncurses library for that.
 
 INFO="info.txt"
+CMD_DIALOG="dialog"
 
-dialog  --title "Data Registration" \
+if ! command -v "$CMD_DIALOG" > /dev/null 2>&1; then
+	echo "command $CMD_DIALOG not available"
+	exit 1
+fi
+
+$CMD_DIALOG  --title "Data Registration" \
 		--separate-widget $'\n' \
 		--inputbox "Name:" 8 40 \
 		--inputbox "Email:" 8 40 \

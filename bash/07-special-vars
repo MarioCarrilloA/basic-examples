@@ -1,13 +1,10 @@
 #!/bin/bash
 
 # [$#] var contains the number of arguments that has been received.
-if (( $# > 0 ));
-then
-
+if (( $# > 0 )); then
 	# [$@] var contains all arguments written bv the user as parameters
 	echo "Arguments received: $#"
-	for ARG in $@
-	do
+	for ARG in $@; do
 		echo "Argument: $ARG"
 	done
 
@@ -33,7 +30,6 @@ then
 	# foreground pipeline.
 	uname -s
 	echo "Exit code $?"
-
 else
 	echo "No arguments"
 fi

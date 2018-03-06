@@ -5,7 +5,7 @@ NUM2=$3
 
 # *** Multiple selective ***
 
-# For multiple selection could be use conditional sentences
+# For multiple selection it is possible to use conditional sentences
 # (if, elif and else) or it could be using cases.
 function modify_result()
 {
@@ -51,7 +51,7 @@ EOF
 
 function main()
 {
-	while (( $# ));do
+	while (( $# )); do
 	case $1 in
 	-h )
 	    help
