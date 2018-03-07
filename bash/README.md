@@ -1,9 +1,9 @@
 # Basic examples - Bash
 
 Bash adopts a serie of features from other shells, this fact and other
-optimizations/improvements makes bash as a current tool. This section
-includes a set of basic bash examples. This scripts just can a basic
-overview of the interpreter and some developing notes/advices.
+optimizations/improvements make bash as a current tool. This section
+includes a set of basic bash examples. This scripts just include a basic
+overview about the interpreter and some developing notes/advices.
 
 ## Single and Double square brackets in Bash
 
