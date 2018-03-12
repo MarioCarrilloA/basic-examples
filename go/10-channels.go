@@ -10,10 +10,10 @@ func buffer_chan() {
 	nums := make(chan int, 2)
 	nums <- 1
 	nums <- 2
-//	nums <- 3
-	fmt.Println(<- nums)
-	fmt.Println(<- nums)
-//	fmt.Println(<- nums)
+	//	nums <- 3
+	fmt.Println(<-nums)
+	fmt.Println(<-nums)
+	//	fmt.Println(<- nums)
 }
 
 func main() {

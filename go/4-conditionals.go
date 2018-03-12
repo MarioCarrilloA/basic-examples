@@ -7,9 +7,9 @@ func number_type(number int) {
 	//fmt.Printf("The number %d\n",number)
 	if number < 0 {
 		fmt.Printf("The number %d is negative\n", number)
-	}else if number == 0 {
+	} else if number == 0 {
 		fmt.Printf("The number %d is zero\n", number)
-	}else {
+	} else {
 		fmt.Printf("The number %d is positive\n", number)
 	}
 }

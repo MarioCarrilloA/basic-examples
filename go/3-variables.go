@@ -1,16 +1,16 @@
 package main
 
 import (
-		"fmt"
-		"math"
+	"fmt"
+	"math"
 )
 
-func get_some_constants() (float64, float64){
+func get_some_constants() (float64, float64) {
 
 	var pi_const float64
 	var e_const float64
 	pi_const = math.Pi
-	e_const	 = math.E
+	e_const = math.E
 
 	return pi_const, e_const
 }

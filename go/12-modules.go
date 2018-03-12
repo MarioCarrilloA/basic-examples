@@ -2,6 +2,6 @@ package main
 
 import "./localmod"
 
-func main () {
+func main() {
 	localmod.Mssg()
 }

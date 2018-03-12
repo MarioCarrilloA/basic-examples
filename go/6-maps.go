@@ -4,13 +4,13 @@ import "fmt"
 
 type str_example struct {
 	name string
-	age int
+	age  int
 }
 
 func maps_and_structs() {
 	var map_example = map[int]str_example{
-		1: {"Bill",  23},
-		2: {"Jeny",  27},
+		1: {"Bill", 23},
+		2: {"Jeny", 27},
 		3: {"three", 32},
 	}
 
@@ -23,14 +23,14 @@ func maps_and_structs() {
 
 func basic_maps() {
 	var map_example map[string]int
-	map_example = make(map[string] int)
-	map_example["one"]   = 1
-	map_example["two"]   = 2
+	map_example = make(map[string]int)
+	map_example["one"] = 1
+	map_example["two"] = 2
 	map_example["three"] = 3
 	fmt.Println(map_example)
 	for key, data := range map_example {
-        fmt.Println("Key:", key, "data:", data)
-    }
+		fmt.Println("Key:", key, "data:", data)
+	}
 }
 
 func main() {
